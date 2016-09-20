@@ -3,10 +3,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Go Table View Controller-->
+        <!--XfinityTV Shows-->
         <scene sceneID="D0l-EB-JeW">
             <objects>
                 <tableViewController id="J2X-HX-s0D" customClass="XFYTVGoTableViewController" sceneMemberID="viewController">
@@ -19,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7jZ-hU-rRa" id="X4F-2G-981">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -30,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="136" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vcb-pM-Vcu" id="JTL-AR-PNL">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -38,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="180" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AgW-Pd-xZh" id="Ffh-RE-Jn8">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -49,7 +50,7 @@
                             <outlet property="delegate" destination="J2X-HX-s0D" id="GVn-Ij-Yyh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="W27-oR-amo"/>
+                    <navigationItem key="navigationItem" title="XfinityTV Shows" id="W27-oR-amo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2l-IL-q0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,40 +68,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t56-7q-OTf">
-                                <frame key="frameInset" minX="67" minY="93" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvb-YQ-oMg">
-                                <frame key="frameInset" minX="67" minY="238" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t56-7q-OTf"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvb-YQ-oMg">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb6-Jd-FX3">
-                                <frame key="frameInset" minX="67" minY="267" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb6-Jd-FX3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OyP-pk-4YR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQb-8g-NGq">
-                                <frame key="frameInset" minX="67" minY="303" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQb-8g-NGq">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PJT-ci-lHH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCc-s7-3We">
-                                <frame key="frameInset" minX="67" minY="332" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCc-s7-3We">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pQb-8g-NGq" firstAttribute="top" secondItem="mb6-Jd-FX3" secondAttribute="bottom" constant="15" id="7pH-1M-lCR"/>
+                            <constraint firstItem="t56-7q-OTf" firstAttribute="leading" secondItem="Kvb-YQ-oMg" secondAttribute="leading" id="U29-mX-4GY"/>
+                            <constraint firstItem="Kvb-YQ-oMg" firstAttribute="top" secondItem="t56-7q-OTf" secondAttribute="bottom" constant="17" id="Y8B-3r-uwL"/>
+                            <constraint firstItem="aCc-s7-3We" firstAttribute="top" secondItem="pQb-8g-NGq" secondAttribute="bottom" constant="8" symbolic="YES" id="ciH-nY-nXn"/>
+                            <constraint firstItem="mb6-Jd-FX3" firstAttribute="top" secondItem="Kvb-YQ-oMg" secondAttribute="bottom" constant="8" symbolic="YES" id="eUN-I0-tWA"/>
+                            <constraint firstItem="t56-7q-OTf" firstAttribute="top" secondItem="7Y2-21-IFS" secondAttribute="bottom" constant="29" id="eXw-e5-3g7"/>
+                            <constraint firstItem="Kvb-YQ-oMg" firstAttribute="leading" secondItem="mb6-Jd-FX3" secondAttribute="leading" id="ewF-wS-OQS"/>
+                            <constraint firstItem="mb6-Jd-FX3" firstAttribute="trailing" secondItem="pQb-8g-NGq" secondAttribute="trailing" id="fhn-Cd-7mz"/>
+                            <constraint firstItem="pQb-8g-NGq" firstAttribute="leading" secondItem="aCc-s7-3We" secondAttribute="leading" id="frM-bC-PUZ"/>
+                            <constraint firstItem="Kvb-YQ-oMg" firstAttribute="trailing" secondItem="mb6-Jd-FX3" secondAttribute="trailing" id="myV-wQ-zcZ"/>
+                            <constraint firstItem="t56-7q-OTf" firstAttribute="centerX" secondItem="KfF-ti-M8b" secondAttribute="centerX" id="nUI-oe-w28"/>
+                            <constraint firstItem="p8l-KC-ysf" firstAttribute="top" secondItem="aCc-s7-3We" secondAttribute="bottom" constant="314" id="oEo-0B-7FP"/>
+                            <constraint firstItem="pQb-8g-NGq" firstAttribute="trailing" secondItem="aCc-s7-3We" secondAttribute="trailing" id="tRq-AA-8kn"/>
+                            <constraint firstItem="t56-7q-OTf" firstAttribute="trailing" secondItem="Kvb-YQ-oMg" secondAttribute="trailing" id="wW2-Qc-6ho"/>
+                            <constraint firstItem="t56-7q-OTf" firstAttribute="leading" secondItem="KfF-ti-M8b" secondAttribute="leadingMargin" constant="51" id="xD9-kF-jHZ"/>
+                            <constraint firstItem="mb6-Jd-FX3" firstAttribute="leading" secondItem="pQb-8g-NGq" secondAttribute="leading" id="zNb-XL-PsY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="episodeIdentifierField" destination="mb6-Jd-FX3" id="cYB-EW-3zl"/>

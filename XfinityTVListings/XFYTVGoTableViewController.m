@@ -133,12 +133,16 @@
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
                 NSURL *url = [[NSURL alloc]initWithString:listing.imageURL];
                 NSData *imageData = [NSData dataWithContentsOfURL:url];
+                UIImage *fetchedImage = [UIImage imageWithData:imageData];
+                NSData *fetchedData = UIImagePNGRepresentation(fetchedImage);
                 NSData *whiteImage = UIImagePNGRepresentation([UIImage imageNamed:@"whiteImage"]);
-                if (![imageData isEqual:whiteImage]) {
-                    UIImage *fetchedImage = [UIImage imageWithData:imageData];
+                if (fetchedData.length != whiteImage.length) {
+                    
                     [self.imageCache setObject:fetchedImage forKey:listing.imageURL];
                     if (ldvc) {
-                        ldvc.showArtView.image = fetchedImage;
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            ldvc.showArtView.image = fetchedImage;
+                        });
                     }
                 } else {
                      [self.imageCache setObject:[UIImage imageNamed:@"placeholderArt"] forKey:listing.imageURL];
@@ -152,6 +156,7 @@
         ldvc.episodeIdentifier = listing.episodeName;
         ldvc.runningTime = [listing.minutes stringByAppendingString:@" min"];
         ldvc.episodeSummary = listing.episodeSummary;
+        ldvc.navigationItem.title = @"Episode Details";
     }
 }
 

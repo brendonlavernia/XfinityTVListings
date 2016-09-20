@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78C030751D91D267004B6B5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C030741D91D267004B6B5A /* Images.xcassets */; };
 		78ED915B1D90CCD000AA62DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED915A1D90CCD000AA62DB /* main.m */; };
 		78ED915E1D90CCD000AA62DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED915D1D90CCD000AA62DB /* AppDelegate.m */; };
-		78ED91661D90CCD000AA62DB /* placeholderArt in Resources */ = {isa = PBXBuildFile; fileRef = 78ED91651D90CCD000AA62DB /* placeholderArt */; };
 		78ED91721D90D05B00AA62DB /* XFYTVGoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED91711D90D05B00AA62DB /* XFYTVGoAPI.m */; };
 		78ED91751D90D48200AA62DB /* XFYTVGoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED91741D90D48200AA62DB /* XFYTVGoTableViewController.m */; };
 		78ED91771D90DA3000AA62DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ED91761D90DA3000AA62DB /* Main.storyboard */; };
@@ -20,11 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78C030741D91D267004B6B5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		78ED91561D90CCD000AA62DB /* XfinityTVListings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XfinityTVListings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ED915A1D90CCD000AA62DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78ED915C1D90CCD000AA62DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78ED915D1D90CCD000AA62DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		78ED91651D90CCD000AA62DB /* placeholderArt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = placeholderArt; sourceTree = "<group>"; };
 		78ED916A1D90CCD000AA62DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78ED91701D90D05B00AA62DB /* XFYTVGoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFYTVGoAPI.h; sourceTree = "<group>"; };
 		78ED91711D90D05B00AA62DB /* XFYTVGoAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFYTVGoAPI.m; sourceTree = "<group>"; };
@@ -73,7 +73,6 @@
 			children = (
 				78ED915C1D90CCD000AA62DB /* AppDelegate.h */,
 				78ED915D1D90CCD000AA62DB /* AppDelegate.m */,
-				78ED91651D90CCD000AA62DB /* placeholderArt */,
 				78ED916A1D90CCD000AA62DB /* Info.plist */,
 				78ED91761D90DA3000AA62DB /* Main.storyboard */,
 				78ED91591D90CCD000AA62DB /* Supporting Files */,
@@ -89,6 +88,7 @@
 				78ED917F1D90FC1700AA62DB /* XFYTVShowEpisode.m */,
 				78ED91811D919C3A00AA62DB /* XFYTVListingDetailsViewController.h */,
 				78ED91821D919C3A00AA62DB /* XFYTVListingDetailsViewController.m */,
+				78C030741D91D267004B6B5A /* Images.xcassets */,
 			);
 			path = XfinityTVListings;
 			sourceTree = "<group>";
@@ -159,8 +159,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78ED91661D90CCD000AA62DB /* placeholderArt in Resources */,
 				78ED91771D90DA3000AA62DB /* Main.storyboard in Resources */,
+				78C030751D91D267004B6B5A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +316,7 @@
 				78ED916F1D90CCD000AA62DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
