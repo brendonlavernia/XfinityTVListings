@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78ED915B1D90CCD000AA62DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED915A1D90CCD000AA62DB /* main.m */; };
+		78ED915E1D90CCD000AA62DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED915D1D90CCD000AA62DB /* AppDelegate.m */; };
+		78ED91611D90CCD000AA62DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED91601D90CCD000AA62DB /* ViewController.m */; };
+		78ED91641D90CCD000AA62DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ED91621D90CCD000AA62DB /* Main.storyboard */; };
+		78ED91661D90CCD000AA62DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ED91651D90CCD000AA62DB /* Assets.xcassets */; };
+		78ED91691D90CCD000AA62DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ED91671D90CCD000AA62DB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78ED91561D90CCD000AA62DB /* XfinityTVListings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XfinityTVListings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78ED915A1D90CCD000AA62DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78ED915C1D90CCD000AA62DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		78ED915D1D90CCD000AA62DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78ED915F1D90CCD000AA62DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		78ED91601D90CCD000AA62DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		78ED91631D90CCD000AA62DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78ED91651D90CCD000AA62DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78ED91681D90CCD000AA62DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78ED916A1D90CCD000AA62DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78ED91531D90CCD000AA62DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78ED914D1D90CCCF00AA62DB = {
+			isa = PBXGroup;
+			children = (
+				78ED91581D90CCD000AA62DB /* XfinityTVListings */,
+				78ED91571D90CCD000AA62DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78ED91571D90CCD000AA62DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78ED91561D90CCD000AA62DB /* XfinityTVListings.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78ED91581D90CCD000AA62DB /* XfinityTVListings */ = {
+			isa = PBXGroup;
+			children = (
+				78ED915C1D90CCD000AA62DB /* AppDelegate.h */,
+				78ED915D1D90CCD000AA62DB /* AppDelegate.m */,
+				78ED915F1D90CCD000AA62DB /* ViewController.h */,
+				78ED91601D90CCD000AA62DB /* ViewController.m */,
+				78ED91621D90CCD000AA62DB /* Main.storyboard */,
+				78ED91651D90CCD000AA62DB /* Assets.xcassets */,
+				78ED91671D90CCD000AA62DB /* LaunchScreen.storyboard */,
+				78ED916A1D90CCD000AA62DB /* Info.plist */,
+				78ED91591D90CCD000AA62DB /* Supporting Files */,
+			);
+			path = XfinityTVListings;
+			sourceTree = "<group>";
+		};
+		78ED91591D90CCD000AA62DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78ED915A1D90CCD000AA62DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78ED91551D90CCD000AA62DB /* XfinityTVListings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78ED916D1D90CCD000AA62DB /* Build configuration list for PBXNativeTarget "XfinityTVListings" */;
+			buildPhases = (
+				78ED91521D90CCD000AA62DB /* Sources */,
+				78ED91531D90CCD000AA62DB /* Frameworks */,
+				78ED91541D90CCD000AA62DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XfinityTVListings;
+			productName = XfinityTVListings;
+			productReference = 78ED91561D90CCD000AA62DB /* XfinityTVListings.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78ED914E1D90CCCF00AA62DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Comcast;
+				TargetAttributes = {
+					78ED91551D90CCD000AA62DB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 78ED91511D90CCCF00AA62DB /* Build configuration list for PBXProject "XfinityTVListings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78ED914D1D90CCCF00AA62DB;
+			productRefGroup = 78ED91571D90CCD000AA62DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78ED91551D90CCD000AA62DB /* XfinityTVListings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78ED91541D90CCD000AA62DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78ED91691D90CCD000AA62DB /* LaunchScreen.storyboard in Resources */,
+				78ED91661D90CCD000AA62DB /* Assets.xcassets in Resources */,
+				78ED91641D90CCD000AA62DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78ED91521D90CCD000AA62DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78ED91611D90CCD000AA62DB /* ViewController.m in Sources */,
+				78ED915E1D90CCD000AA62DB /* AppDelegate.m in Sources */,
+				78ED915B1D90CCD000AA62DB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78ED91621D90CCD000AA62DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78ED91631D90CCD000AA62DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78ED91671D90CCD000AA62DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78ED91681D90CCD000AA62DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78ED916B1D90CCD000AA62DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78ED916C1D90CCD000AA62DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78ED916E1D90CCD000AA62DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XfinityTVListings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brendonlavernia.XfinityTVListings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		78ED916F1D90CCD000AA62DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XfinityTVListings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brendonlavernia.XfinityTVListings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78ED91511D90CCCF00AA62DB /* Build configuration list for PBXProject "XfinityTVListings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78ED916B1D90CCD000AA62DB /* Debug */,
+				78ED916C1D90CCD000AA62DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78ED916D1D90CCD000AA62DB /* Build configuration list for PBXNativeTarget "XfinityTVListings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78ED916E1D90CCD000AA62DB /* Debug */,
+				78ED916F1D90CCD000AA62DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78ED914E1D90CCCF00AA62DB /* Project object */;
+}
