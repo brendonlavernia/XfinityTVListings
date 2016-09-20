@@ -24,6 +24,7 @@
                          episode:(NSString *)episodeName
                           season:(NSString *)season
                    episodeNumber:(NSString *)episodeNumber
+                  episodeSummary:(NSString *)episodeSummary
                         imageURL:(NSString *)imageURL
                         duration:(NSString *)minutes;
 

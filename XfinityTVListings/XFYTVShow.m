@@ -34,6 +34,7 @@
 - (BOOL) insertNewEpisode:(NSString *)episodeName
                    season:(NSString *)season
             episodeNumber:(NSString *)episodeNumber
+           episodeSummary:(NSString *)episodeSummary
                  imageURL:(NSString *)imageURL
                  duration:(NSString *)minutes {
     
@@ -44,6 +45,7 @@
                                                                           episode:episodeName
                                                                            season:season
                                                                     episodeNumber:episodeNumber
+                                                                   episodeSummary:episodeSummary
                                                                          imageURL:imageURL
                                                                          duration:minutes];
     return didReplaceEpisode;

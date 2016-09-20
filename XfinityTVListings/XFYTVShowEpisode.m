@@ -15,6 +15,7 @@
                          episode:(NSString *)episodeName
                           season:(NSString *)season
                    episodeNumber:(NSString *)episodeNumber
+                  episodeSummary:(NSString *)episodeSummary
                         imageURL:(NSString *)imageURL
                         duration:(NSString *)minutes {
     
@@ -26,6 +27,7 @@
         _episodeName = episodeName;
         _season = season;
         _episodeNumber = episodeNumber;
+        _episodeSummary = episodeSummary;
         _imageURL = imageURL;
         _minutes = minutes;
     }

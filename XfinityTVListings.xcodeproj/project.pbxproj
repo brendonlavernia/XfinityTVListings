@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		78ED915B1D90CCD000AA62DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED915A1D90CCD000AA62DB /* main.m */; };
 		78ED915E1D90CCD000AA62DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED915D1D90CCD000AA62DB /* AppDelegate.m */; };
-		78ED91661D90CCD000AA62DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ED91651D90CCD000AA62DB /* Assets.xcassets */; };
+		78ED91661D90CCD000AA62DB /* placeholderArt in Resources */ = {isa = PBXBuildFile; fileRef = 78ED91651D90CCD000AA62DB /* placeholderArt */; };
 		78ED91721D90D05B00AA62DB /* XFYTVGoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED91711D90D05B00AA62DB /* XFYTVGoAPI.m */; };
 		78ED91751D90D48200AA62DB /* XFYTVGoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED91741D90D48200AA62DB /* XFYTVGoTableViewController.m */; };
 		78ED91771D90DA3000AA62DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ED91761D90DA3000AA62DB /* Main.storyboard */; };
 		78ED917A1D90EC3700AA62DB /* XFYTVNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED91791D90EC3700AA62DB /* XFYTVNetwork.m */; };
 		78ED917D1D90F95600AA62DB /* XFYTVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED917C1D90F95600AA62DB /* XFYTVShow.m */; };
 		78ED91801D90FC1700AA62DB /* XFYTVShowEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED917F1D90FC1700AA62DB /* XFYTVShowEpisode.m */; };
+		78ED91831D919C3A00AA62DB /* XFYTVListingDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ED91821D919C3A00AA62DB /* XFYTVListingDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,7 @@
 		78ED915A1D90CCD000AA62DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78ED915C1D90CCD000AA62DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78ED915D1D90CCD000AA62DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		78ED91651D90CCD000AA62DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78ED91651D90CCD000AA62DB /* placeholderArt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = placeholderArt; sourceTree = "<group>"; };
 		78ED916A1D90CCD000AA62DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78ED91701D90D05B00AA62DB /* XFYTVGoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFYTVGoAPI.h; sourceTree = "<group>"; };
 		78ED91711D90D05B00AA62DB /* XFYTVGoAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFYTVGoAPI.m; sourceTree = "<group>"; };
@@ -36,6 +37,8 @@
 		78ED917C1D90F95600AA62DB /* XFYTVShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFYTVShow.m; sourceTree = "<group>"; };
 		78ED917E1D90FC1700AA62DB /* XFYTVShowEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFYTVShowEpisode.h; sourceTree = "<group>"; };
 		78ED917F1D90FC1700AA62DB /* XFYTVShowEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFYTVShowEpisode.m; sourceTree = "<group>"; };
+		78ED91811D919C3A00AA62DB /* XFYTVListingDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFYTVListingDetailsViewController.h; sourceTree = "<group>"; };
+		78ED91821D919C3A00AA62DB /* XFYTVListingDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFYTVListingDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +73,7 @@
 			children = (
 				78ED915C1D90CCD000AA62DB /* AppDelegate.h */,
 				78ED915D1D90CCD000AA62DB /* AppDelegate.m */,
-				78ED91651D90CCD000AA62DB /* Assets.xcassets */,
+				78ED91651D90CCD000AA62DB /* placeholderArt */,
 				78ED916A1D90CCD000AA62DB /* Info.plist */,
 				78ED91761D90DA3000AA62DB /* Main.storyboard */,
 				78ED91591D90CCD000AA62DB /* Supporting Files */,
@@ -84,6 +87,8 @@
 				78ED917C1D90F95600AA62DB /* XFYTVShow.m */,
 				78ED917E1D90FC1700AA62DB /* XFYTVShowEpisode.h */,
 				78ED917F1D90FC1700AA62DB /* XFYTVShowEpisode.m */,
+				78ED91811D919C3A00AA62DB /* XFYTVListingDetailsViewController.h */,
+				78ED91821D919C3A00AA62DB /* XFYTVListingDetailsViewController.m */,
 			);
 			path = XfinityTVListings;
 			sourceTree = "<group>";
@@ -154,7 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78ED91661D90CCD000AA62DB /* Assets.xcassets in Resources */,
+				78ED91661D90CCD000AA62DB /* placeholderArt in Resources */,
 				78ED91771D90DA3000AA62DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +177,7 @@
 				78ED91751D90D48200AA62DB /* XFYTVGoTableViewController.m in Sources */,
 				78ED915E1D90CCD000AA62DB /* AppDelegate.m in Sources */,
 				78ED91801D90FC1700AA62DB /* XFYTVShowEpisode.m in Sources */,
+				78ED91831D919C3A00AA62DB /* XFYTVListingDetailsViewController.m in Sources */,
 				78ED915B1D90CCD000AA62DB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

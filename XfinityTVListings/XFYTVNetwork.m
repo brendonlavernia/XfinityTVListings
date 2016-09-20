@@ -48,6 +48,7 @@
     BOOL didOverwriteEpisodeData = [show insertNewEpisode:episodeName
                                                    season:season
                                             episodeNumber:episodeNumber
+                                           episodeSummary:description
                                                  imageURL:imageURL
                                                  duration:minutes];
     

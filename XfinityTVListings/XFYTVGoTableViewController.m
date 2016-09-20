@@ -9,19 +9,36 @@
 #import "XFYTVGoTableViewController.h"
 #import "XFYTVGoAPI.h"
 #import "XFYTVShowEpisode.h"
+#import "XFYTVListingDetailsViewController.h"
 
 @interface XFYTVGoTableViewController ()
 
 @property (nonatomic, strong) XFYTVGoAPI *api;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, UIImage *> *imageCache;
 
 @end
 
 @implementation XFYTVGoTableViewController
 
+
 -(void)viewWillAppear:(BOOL)animated {
-    self.api = [[XFYTVGoAPI alloc] init];
-    [self.api fetchDataForTableView:self.tableView];
-    [self.tableView registerClass:[UITableViewCell self] forCellReuseIdentifier:@"XFYTVListingCellReuseIdentifier"];
+    [super viewWillAppear:animated];
+    
+    if (!self.imageCache) {
+        self.imageCache = [@{} mutableCopy];
+        [self.tableView registerClass:[UITableViewCell self] forCellReuseIdentifier:@"XFYTVListingCellReuseIdentifier"];
+    }
+    
+    if (!self.api) {
+        self.api = [[XFYTVGoAPI alloc] init];
+        [self.api fetchDataForTableView:self.tableView];
+    }
+    
+    NSIndexPath *selectedRow = [self.tableView indexPathForSelectedRow];
+    if (selectedRow) {
+        [self.tableView deselectRowAtIndexPath:selectedRow animated:YES];
+    }
+    
 }
 
 - (void)viewDidLoad {
@@ -52,9 +69,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XFYTVListingCellReuseIdentifier"];
-    
+    XFYTVShowEpisode *listing = [self.api episodeListingForIndexPath:indexPath];
     // Configure the cell...
-    cell.textLabel.text = @"Hello";
+    cell.textLabel.text = listing.show;
     
     return cell;
 }
@@ -99,14 +116,48 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"listingDetailSeque"]) {
+        XFYTVListingDetailsViewController *ldvc = [segue destinationViewController];
+        NSIndexPath *selectedRow = [self.tableView indexPathForSelectedRow];
+        XFYTVShowEpisode *listing = [self.api episodeListingForIndexPath:selectedRow];
+        UIImage *showArt = [self.imageCache objectForKey:listing.imageURL];
+        if (!showArt) {
+            showArt = [UIImage imageNamed:@"placeholderArt"];
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+                NSURL *url = [[NSURL alloc]initWithString:listing.imageURL];
+                NSData *imageData = [NSData dataWithContentsOfURL:url];
+                NSData *whiteImage = UIImagePNGRepresentation([UIImage imageNamed:@"whiteImage"]);
+                if (![imageData isEqual:whiteImage]) {
+                    UIImage *fetchedImage = [UIImage imageWithData:imageData];
+                    [self.imageCache setObject:fetchedImage forKey:listing.imageURL];
+                    if (ldvc) {
+                        ldvc.showArtView.image = fetchedImage;
+                    }
+                } else {
+                     [self.imageCache setObject:[UIImage imageNamed:@"placeholderArt"] forKey:listing.imageURL];
+                }
+            });
+        }
+        
+        
+        ldvc.showTitle = listing.show;
+        ldvc.showArt = showArt;
+        ldvc.episodeIdentifier = listing.episodeName;
+        ldvc.runningTime = [listing.minutes stringByAppendingString:@" min"];
+        ldvc.episodeSummary = listing.episodeSummary;
+    }
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"listingDetailSeque" sender:nil];
+}
+
 
 @end

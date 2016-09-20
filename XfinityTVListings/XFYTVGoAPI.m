@@ -61,7 +61,10 @@ NSString * const XFYTVGoAPIURL = @"http://tvgo.xfinity.com/api/xfinity/ipad/home
                 }
             }
         }
-        NSArray *sortedNetworks = [[networkMap allValues] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+        
+        NSOrderedSet *setOfNetworks = [NSOrderedSet orderedSetWithArray:[networkMap allValues]];
+        NSArray *sortedNetworks =  [[setOfNetworks array] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+        
         for (NSString *networkName in sortedNetworks) {
             [self.cells addObject:[self.networks[networkName] sortedEpisodes]];
         }
